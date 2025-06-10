@@ -1,0 +1,921 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+  
+  
+  #blackbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       background-color: black;
+       height: 5.5vh;
+       margin-top: 0;
+   }
+
+   #blackbar p{
+      font-family: 'Gill Sans';
+        color: white;
+        margin: 0;
+       margin-top: 0;
+       cursor: pointer;
+   }
+    
+   #navbar {
+    background-color: white;
+    position: sticky;
+    top:0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    height: 10vh;
+    z-index: 2;
+  }
+  
+  
+
+  .Separatore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    width: 32vh;
+    height: 100%;
+    
+  }
+
+  .Nav_buttons{
+    display: flex;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    color: #303030;
+    font-size: 0.9rem;
+    background-color: white;
+    gap: 1.5rem;
+    height: 100%;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  #donna{
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+
+  #logo_mobile{
+    display: none;
+  }
+
+  #lente_mobile{
+    display: none;
+  }
+
+  .Navbar div.Separatore img, .Navbar div.Separatore p {
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1023px){
+    #logo{
+      display: none;
+    }
+    #logo_mobile{
+      display: block;
+    }
+
+  #lente{
+    display: none;
+  }
+  #rete{
+    display: none;
+  }
+  #utente{
+    display: none;
+  }
+
+  #navbar{
+    flex-basis: 33%;
+    padding: 0;
+  }
+
+  #lente_mobile{
+    display: block;
+  }
+
+  .Nav_buttons{
+    display: none;
+  }
+
+  }
+
+
+
+.Menu_hover{
+  display: none;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  background-color: white;
+  z-index: 3;
+  cursor:default;
+}
+
+
+#menu_donna {
+  display: flex;
+  gap: 8vh;
+  padding-left: 6vh;
+  max-height: 100%;
+}
+
+.colonna_hover{
+  font-family: 'Gill Sans';
+  font-weight: 500;
+  font-size: 0.85rem;
+  border: solid lightgray;
+  border-width: 0vh 0.5vh 0vh 0vh;
+  padding-right: 3vh;
+}
+
+.colonna_hover p{
+  width:60%; 
+}
+
+
+.Imgs_hover{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-height: 100%;
+  padding-top:8vh ;
+  padding-left: 13vh;
+  gap : 1vh;
+}
+
+.Imgs_hover img{
+  object-fit: cover;
+  max-height: 60%;
+  max-width: 100%;
+  object-position: center;
+}
+
+
+
+
+
+
+
+
+  
+  .Immagine_brand_sup{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+
+  .Immagine_brand_sup img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    z-index: 0; 
+  }
+  
+  .Immagine_brand_sup p {
+    text-align: center;
+    position: relative;
+    z-index: 1; 
+  }
+  
+  .Back_sup_testo_sup p {
+    padding-top: 5vh; 
+    font-size: 3rem;
+    font-family: "Tangerine", "cursive";
+    font-style: normal;
+  }
+
+
+  .Back_sup_testo_cen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+  }
+  
+  .Back_sup_testo_cen p {
+    font-family: "roboto flex";
+    font-weight: 500;
+    font-size: 5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Back_sup_testo_inf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10vh;
+  }
+
+  .Back_sup_testo_inf p {
+    font-family: "roboto flex";
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .Back_sup_pulsanti {
+    display: flex;
+    padding-bottom: 4vh; 
+    position: relative;
+    gap: 2vh;
+    z-index: 1; 
+  }
+  
+  .Back_sup_pulsanti p {
+    font-family: "roboto flex";
+    background-color:white;
+    color: black;
+    cursor: pointer;
+    padding: 2.5vh 4.5vh;
+  }
+  
+  
+
+
+
+.Immagine_brand_inf{
+  position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.Immagine_brand_inf img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.Brand_buttons {
+  display: flex;
+  flex-direction: row;
+  position: absolute; 
+  gap :2vh;
+  z-index: 1; 
+}
+
+.Brand_buttons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0); 
+  font-family: 'roboto flex';
+  text-align: center;
+  color: white; 
+  border: solid 1px white;
+  cursor: pointer;
+  padding: 2.2vh 4vh;
+
+}
+
+.Brand_buttons p:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
+.About {
+  flex-direction: column;
+    display: flex;
+    padding-left:6vh;
+    height: auto;
+    background-color: white;
+    text-align: left;
+    padding-top: 6vh;
+    width: 60%;
+    
+    
+    
+}
+
+#titolo_about {
+    font-family: "Roboto Flex";
+    font-style: normal;
+    font-size: 1.7rem;
+    font-weight: 450;
+    color: black;
+
+}
+
+.Testo_about {
+  font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-size: 0.85rem;
+    line-height: 1.7rem;
+    word-spacing: 0.0900rem;
+    color: black;
+    width: 60%;
+    max-height: 60vh;
+    overflow: hidden;
+    font-weight: 800;
+    
+}
+
+.Testo_about_visible {
+  display: block;
+}
+
+.Testo_about_hidden {
+display: none;
+}
+
+
+
+
+#button_leggi {
+  font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
+
+.Tommy_register {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 25vh;
+  width: 85%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  background-color: white;
+  border-style: solid;
+  padding-top: 1vh;
+  padding-bottom: 5vh;
+  border-top-color: gray;
+  border-bottom-color: grey;
+  border-width: 0.2vh 0;
+}
+
+#titolo_register {
+  font-family: 'Playwrite AU QLD';
+  font-size: 1.3rem;
+  color: black;
+  margin: 0;
+}
+
+#testo_register {
+  font-family: 'roboto flex'; 
+  font-size: 1.8rem;
+  font-weight:500;
+  color: black;
+}
+
+#button_register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  cursor: pointer;
+}
+
+#button_register_testo {
+  font-family: 'roboto flex'; 
+  font-size: 0.9rem;
+  color: white;
+  padding: 1vh 2vh;
+  
+}
+
+#titolo_saldi {
+  font-family: 'roboto flex';
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+  padding-left: 4vh;
+}
+
+.Immagini_saldi{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 50vh; 
+margin: 0;
+border-bottom-style: solid;
+border-bottom-color: black;
+border-width: 0.2vh 0;
+}
+
+.Immagini_saldi img {
+object-fit: cover; 
+max-width: 70%; 
+height: 70%;
+margin: 0 10px; 
+cursor: pointer;
+}
+
+.Immagini_saldi div {
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  gap : 2vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.Saldi_testo{
+  font-family: 'roboto flex';
+  font-size: 1rem;
+  color: black;
+  margin: 0;
+}
+
+#left_button {
+  cursor: pointer;
+  width: 10%;
+  height: 20%;
+}
+
+#left_button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#right_button {
+  transform: rotate(180deg);
+  cursor: pointer;
+  width: 10%;
+  height: 20%;
+}
+
+#right_button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.Saldi_price {
+  font-family: 'roboto flex';
+  font-size: 1rem;
+  color: red;
+  
+}
+
+
+.Noscroll {
+  overflow: hidden;
+}
+
+.Hidden {
+  display: none;
+  }
+
+
+
+#modal {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.9);
+  }
+  
+  #modal img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  }
+  
+  
+
+
+
+.Gen_info_footer {
+  background-color: white;
+  padding : 3vh 30vh 8vh 10vh  ;
+  display: flex;
+  justify-content: space-between;
+  }
+
+  .Footer_column p{
+    color: black;
+    font-family: 'roboto flex';
+    font-size: 0.75rem;
+    cursor: pointer;
+    line-height: 2.6vh;
+  }
+
+
+
+.Footer_column h1{
+  color: #636363;
+  font-family: 'roboto flex';
+  font-size: 0.7rem;
+}
+
+.Footer_column_mobile img{
+  display: none;
+}
+
+@media (max-width: 1023px){
+  .Gen_info_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 3vh 0vh 3vh;
+   
+}
+
+.Footer_column {
+  display: flex;
+    flex-direction: column;
+    border: solid #ccc;
+    border-width: 0vh 0vh 0.2vh 0vh;
+    padding: 1.6vh 0vh ;
+
+}
+
+.Footer_column_mobile h1{
+  color: black;
+  font-family: 'gill sans';
+  font-size: 0.86rem;
+  font-weight: 200;
+}
+
+.Footer_column p{
+  display: none;
+}
+
+.Footer_column_mobile{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Footer_column_mobile img{
+  display: block;
+  cursor: pointer;
+}
+
+
+}
+
+
+
+.Logo_f{
+  display: flex;
+ height: 20vh;
+ background-color: white;
+ justify-content: center;
+ align-items: center;
+ margin: 10% 25% 10% 25%;
+
+}
+
+.Logo_f img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  
+}
+
+@media (max-width: 1023px) {
+.Logo_f{
+  margin :  0vh 50vh 0vh 5vh;
+}
+
+#c_social_f {
+  display: flex ;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 3vh;
+ 
+}
+
+}
+
+.C_social_f{
+display: flex;
+justify-content: space-between;
+padding:0vh 6vh 0vh 6vh ;
+align-items: center;
+}
+
+.Social_f{
+  display: flex;
+  gap :4vh;
+  max-height: 2.5vh;
+}
+
+.Social_f img{
+  cursor: pointer;
+}
+
+.C_social_f p{
+  font-family: 'roboto flex';
+  font-size: 1rem;
+  color: black;
+}
+
+#dashB{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 3;
+  cursor:default;
+}
+
+#dash_log{
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  gap: 2vh;
+  background-color: white;
+  z-index: 3;
+  cursor:default;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+}
+
+#dash_log.Translate, #dash_register.Translate{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+#dash_log h1{
+  margin-left: 0.5vh;
+  font-family: 'Playwrite AU QLD';
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 350;
+  padding: 0.2vh 0vh 0vh 2.5vh;
+}
+
+#dash_log h2{
+  margin-left:0.5vh;
+  font-family: 'roboto flex';
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 500;
+  padding: 0vh 0vh 0vh 2.5vh;
+}
+
+#log{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vh;
+}
+
+#log p{
+  font-family: 'roboto flex';
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+#log input{
+  width: 85%;
+  height: 5vh;
+  border: solid black;
+  font-family: 'roboto flex';
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+  padding: 0vh 0vh 0vh 1vh;
+  border-width: 0.2vh 0.2vh 0.2vh 0.2vh;
+}
+
+#log_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 5vh;
+  border: solid black;
+  font-family: 'roboto flex';
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  font-weight: 500;
+  border-width: 0.2vh 0.2vh 0.2vh 0.2vh;
+  cursor: pointer;
+}
+
+.Dash_log_register_line {
+  padding-top:5vh ;
+  display: flex;
+  flex-direction: column;
+}
+
+.Dash_log_register h1{
+  font-family: 'roboto flex';
+  font-size: 1.8rem;
+  color: black;
+  font-weight: 500;
+  padding: 0vh 0vh 0vh 2.5vh;
+}
+
+.Dash_log_register p {
+  font-family: 'roboto flex';
+  font-size: 0.8rem;
+  color: black;
+  font-weight: 500;
+  padding: 0vh 0vh 0vh 7vh;
+}
+
+#dash_log_register_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 5vh;
+  font-family: 'roboto flex';
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  font-weight: 500;
+  border-width: 0.2vh 0.2vh 0.2vh 0.2vh;
+  cursor: pointer;
+  margin-left: 33.5%;
+  margin-top: 2vh;
+}
+
+#dash_register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  gap: 2vh;
+  background-color: white;
+  z-index: 3;
+  cursor:default;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0,5s ease-in-out
+  
+}
+
+#dash_register .Register{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vh;
+}
+
+#dash_register h1{
+  margin-left: 0.5vh;
+  font-family: 'Playwrite AU QLD';
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 350;
+  padding: 0.2vh 0vh 0vh 2.5vh;
+}
+
+#dash_register .Register input{
+  width: 85%;
+  height: 5vh;
+  border: solid black;
+  font-family: 'roboto flex';
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+  padding: 0vh 0vh 0vh 1vh;
+  border-width: 0.2vh 0.2vh 0.2vh 0.2vh;
+}
+
+#dash_register p{
+  font-family: 'roboto flex';
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+#register_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 5vh;
+  border: solid black;
+  font-family: 'roboto flex';
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  font-weight: 500;
+  border-width: 0.2vh 0.2vh 0.2vh 0.2vh;
+  cursor: pointer;
+}
+
+#logged {
+    position: fixed; 
+    top: 20px; 
+    right: 20px;
+    background-color: white; 
+    color: black;
+    padding: 15px 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    font-family: 'roboto flex'; 
+    font-size: 16px; 
+    font-weight: bold; 
+    z-index: 3; 
+}
+
+#logout_button {
+    background-color: black; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px; 
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+  
+
+.Map{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5vh;
+  border: solid;
+  border-bottom-color: grey;
+  border-width: 0vh 0 0.2vh 0;
+  padding-bottom: 2vh ;
+}
+
+.Map h1{
+  font-family: 'Playwrite AU QLD';
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 550;
+  padding: 0.2vh 0vh 0.2vh 0vh;
+}
+
+
+#map{
+  z-index: 1;
+  width: 70%;
+  height: 60vh;
+}
+
+

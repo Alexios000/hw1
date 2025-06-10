@@ -1,0 +1,38 @@
+<?php
+require 'db.php';
+
+if (mysqli_connect_errno()) {
+    die("Connessione fallita: " . mysqli_connect_error());
+}
+
+$query = "SELECT * FROM carrello";  
+$result = mysqli_query($conn, $query);
+
+$prezzi = [];
+$quantita = [];
+$totale = 0;
+
+if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_row($result)) {
+        $prezzi[] = $row[2];  
+        $quantita[] = $row[4];  
+    }
+
+    
+    foreach ($prezzi as $index => $prezzo) {
+        $totale += $prezzo * $quantita[$index];
+    }
+} 
+else 
+{
+    $totale = 0;
+    $carrello_vuoto = true;
+}
+
+mysqli_close($conn); 
+?>
+
+
+
+ 
+
