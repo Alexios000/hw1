@@ -344,4 +344,22 @@ signup_button.addEventListener('click', signup);
 
 
 
+document.getElementById("uomo").addEventListener("click", function() {
+    window.location.href = "Abbigliamento_uomo/Abbigliamento_uomo.php";
+  }); 
+
+
+
+  document.getElementById("shop").addEventListener("click", function() {
+    if (sessionStorage.getItem('Logged') === 'true') {
+      window.location.href = "Carrello/Carrello.php";
+    } else {
+      window.location.href = "hw1.php";
+    }
+
+  }); 
+
+
+
+
 
